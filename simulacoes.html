@@ -22,132 +22,58 @@
 
         .content-area {
             padding: 20px 40px;
-            /* Adiciona largura máxima para centralizar e garantir o layout de 5 cards */
             max-width: 1280px;
             margin: 0 auto;
         }
 
-        .nav-links {
+        /* ----------------------------------- */
+        /* MENU DE MATÉRIAS E CARDS PRINCIPAIS */
+        /* ----------------------------------- */
+
+        .main-wrapper {
             display: flex;
-            align-items: stretch;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 20px;
         }
 
-        .nav-link {
-            text-decoration: none;
-            color: #555;
-            font-size: 14px;
-            font-weight: bold;
-            padding: 0 15px;
-            transition: color 0.3s, background-color 0.3s;
-            display: flex;
-            align-items: center;
-            text-transform: uppercase;
+        .ads-sidebar {
+            width: 160px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 20px;
+            z-index: 10;
         }
 
-        .nav-link:hover {
-            color: #D2691E;
-            background-color: #f0f0f0;
+        .banner-simulab {
+            background-color: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid #444;
         }
 
-        .nav-link.main-action {
-            background-color: #D2691E;
-            color: white;
-            padding: 0 20px;
-            margin-left: 20px;
+        .banner-simulab:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(210, 105, 30, 0.5);
+            filter: brightness(1.1);
         }
-        .nav-link.main-action:hover {
-            background-color: #c05c18; /* Cor mais escura no hover */
-            color: white;
+
+        .banner-simulab img {
+            width: 100%;
+            display: block;
         }
-        
-        .nav-buttons {
+
+        .card-container-wrapper {
             display: flex;
-            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
             flex-grow: 1;
+            justify-content: flex-start;
         }
-
-        .nav-button {
-            background: none;
-            border: none;
-            padding: 15px 25px;
-            font-size: 14px;
-            font-weight: bold;
-            color: #555;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: background-color 0.3s;
-            border-bottom: 3px solid transparent;
-        }
-
-        .nav-button.active {
-            color: #D2691E;
-            border-bottom: 3px solid #D2691E;
-        }
-
-        .nav-button:hover:not(.active) {
-            background-color: #f0f0f0;
-        }
-
-        .more-options {
-            margin-left: auto;
-            font-size: 24px;
-            padding: 10px 20px;
-        }
-
-        /* ----------------------------------- */
-        /* MENU DE MATÉRIAS E CARDS */
-        /* ----------------------------------- */
-
-       /* Container que faz o banner e os cards ficarem lado a lado */
-.main-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-/* Sidebar do Banner */
-.ads-sidebar {
-    width: 160px; /* Largura do banner */
-    flex-shrink: 0;
-    position: sticky;
-    top: 20px;
-    z-index: 10;
-}
-
-.banner-simulab {
-    background-color: #000;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    border: 1px solid #444;
-}
-
-/* Efeito de destaque no banner */
-.banner-simulab:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(210, 105, 30, 0.5); /* Brilho Laranja */
-    filter: brightness(1.1);
-}
-
-.banner-simulab img {
-    width: 100%;
-    display: block;
-}
-
-/* Ajuste no container de cards para não quebrar o layout */
-.card-container-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-grow: 1;
-    justify-content: flex-start; /* Alinha os cards à esquerda, perto do banner */
-}
         
-        /* Estilo para o link do card */
         .card-link {
-            /* AJUSTADO PARA CABER 5 CARDS: Ocupa 100% da largura em telas pequenas, mas tem base de 190px */
             flex: 1 1 190px;
             max-width: 190px;
             text-decoration: none;
@@ -155,7 +81,6 @@
             display: block;
         }
 
-        /* ESTILO PARA O CARD DE CONTEÚDO (PADRONIZADO COM FLEXBOX) */
         .content-card {
             width: 100%;
             height: 180px;
@@ -165,7 +90,6 @@
             transition: transform 0.2s;
             cursor: pointer;
             
-            /* CENTRALIZAÇÃO DE CONTEÚDO (ICON + TEXTO) */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -177,50 +101,100 @@
             box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
         }
         
-        /* ESTILO PARA O ÍCONE DENTRO DO CARD */
         .card-icon {
             font-size: 3em;
             margin-bottom: 10px;
             color: #D2691E;
         }
         
-        /* ESTILO PARA O TÍTULO DENTRO DO CARD */
         .card-title {
             text-align: center;
             color: #555;
             font-weight: bold;
             margin: 0;
-            padding: 0;
+            padding: 0 10px;
         }
 
-        /* Responsividade para manter 3 ou 2 cards em telas menores */
+        /* ----------------------------------- */
+        /* SECÇÃO: SIMULADORES DE PARCEIROS    */
+        /* ----------------------------------- */
+
+        .partners-section {
+            width: 100%;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px dashed #ccc;
+        }
+
+        .partners-header {
+            margin-bottom: 20px;
+        }
+
+        .partners-header h2 {
+            color: #D2691E;
+            font-size: 20px;
+            margin: 0 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .partners-header p {
+            color: #555;
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Container de botões parceiros (estilo retangular grande com imagem) */
+        .partner-card {
+            width: 210px;
+            height: 110px;
+            background-color: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .partner-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem preenche todo o card */
+            display: block;
+        }
+
+        /* Responsividade */
         @media (max-width: 1200px) {
             .card-container-wrapper {
-                justify-content: space-around; /* Distribui os cards para preencher o espaço */
-                gap: 30px;
+                justify-content: space-around;
+                gap: 25px;
             }
             .card-link {
-                /* Permite 3 cards por linha (~350px) */
                 flex: 1 1 250px;
                 max-width: 250px;
-            }
-            .header-tools {
-                flex-direction: column; /* Coloca menu e cards em colunas no mobile */
-                align-items: center;
-            }
-            .subject-menu-container {
-                margin-top: 0;
             }
         }
 
         @media (max-width: 600px) {
             .card-link {
-                /* Permite 2 cards por linha (~250px) */
                 flex: 1 1 40%;
                 max-width: 45%;
             }
+            .partner-card {
+                width: 100%;
+                max-width: 250px;
+            }
         }
-
     </style>
 </head>
 <body>
@@ -236,13 +210,15 @@
             </div>
         </aside>
 
-        <div class="card-container-wrapper">
-            <a href="simulacoes/geometria_plana.html" class="card-link" data-subject="matematica">
-                <div class="content-card">
-                    <i class="fas fa-chart-area card-icon"></i> <p class="card-title">Geometria Plana</p>
-                </div>
-            </a>
-             <a href="simulacoes/conjuntos_numericos.html" class="card-link" data-subject="matematica">
+        <div style="flex-grow: 1;">
+            <!-- SIMULADORES DO SIMULAB -->
+            <div class="card-container-wrapper">
+                <a href="simulacoes/geometria_plana.html" class="card-link" data-subject="matematica">
+                    <div class="content-card">
+                        <i class="fas fa-chart-area card-icon"></i> <p class="card-title">Geometria Plana</p>
+                    </div>
+                </a>
+                <a href="simulacoes/conjuntos_numericos.html" class="card-link" data-subject="matematica">
                     <div class="content-card">
                         <i class="fas fa-calculator card-icon"></i> <p class="card-title">Conjuntos Numéricos</p>
                     </div>
@@ -262,8 +238,6 @@
                         <i class="fas fa-sort-numeric-up-alt card-icon"></i> <p class="card-title">Sequências Iniciais</p>
                     </div>
                 </a>
-               
-             
                 <a href="simulacoes/porcentagem.html" class="card-link" data-subject="matematica financeira">
                     <div class="content-card">
                         <i class="fas fa-percent card-icon"></i> <p class="card-title">Porcentagem e Frações</p>
@@ -284,7 +258,6 @@
                         <i class="fas fa-car-side card-icon"></i> <p class="card-title">MRU</p>
                     </div>
                 </a>
-             
                 <a href="simulacoes/energia.html" class="card-link" data-subject="fisica">
                     <div class="content-card">
                         <i class="fas fa-bolt card-icon"></i> <p class="card-title">Energia</p>
@@ -315,16 +288,11 @@
                         <i class="fas fa-vial card-icon"></i> <p class="card-title">Ácidos e Bases</p>
                     </div>
                 </a>
-              
-             
-                
                 <a href="simulacoes/matriz.html" class="card-link" data-subject="matematica">
                     <div class="content-card">
                         <i class="fa-solid fa-hashtag card-icon"></i> <p class="card-title">Matrizes</p>
                     </div>
                 </a>
-              
-        
                 <a href="simulacoes/probabilidade.html" class="card-link" data-subject="matematica">
                     <div class="content-card">
                         <i class="fas fa-dice-six card-icon"></i> <p class="card-title">Probabilidade</p>
@@ -360,10 +328,6 @@
                         <i class="fas fa-tachometer-alt card-icon"></i> <p class="card-title">Cinética Química</p>
                     </div>
                 </a>
-         
-         
-             
-            
                 <a href="simulacoes/dilatacao_termica.html" class="card-link" data-subject="fisica">
                     <div class="content-card">
                         <i class="fas fa-expand-alt card-icon"></i> <p class="card-title">Dilatação Térmica</p>
@@ -389,7 +353,6 @@
                         <i class="fas fa-cogs card-icon"></i> <p class="card-title">Gravitação Universal</p>
                     </div>
                 </a>
-                
                 <a href="simulacoes/limites.html" class="card-link" data-subject="matematica">
                     <div class="content-card">
                         <i class="fas fa-infinity card-icon"></i> <p class="card-title">Cálculo e Limites</p>
@@ -400,10 +363,6 @@
                         <i class="fas fa-divide card-icon"></i> <p class="card-title">Sistemas Lineares</p>
                     </div>
                 </a>
-               
-                
-           
-               
                 <a href="simulacoes/eletroquimica.html" class="card-link" data-subject="quimica">
                     <div class="content-card">
                         <i class="fas fa-battery-full card-icon"></i> <p class="card-title">Eletroquímica</p>
@@ -411,124 +370,106 @@
                 </a>
             </div>
 
-    </div> </main>
+            <!-- SECÇÃO DE SIMULADORES PARCEIROS (ESTILO BOTÕES DE IMAGEM) -->
+            <section class="partners-section">
+                <div class="partners-header">
+                    <h2><i class="fas fa-handshake"></i> Simuladores e Recursos Recomendados</h2>
+                    <p>Os recursos abaixo foram cuidadosamente selecionados e recomendados pela equipa do SimuLab para facilitar o trabalho dos docentes. <strong>Nota:</strong> Estas ferramentas pertencem a plataformas externas parceiras e abrem num novo separador.</p>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <!-- MolView -->
+                    <a href="https://molview.org/" target="_blank" rel="noopener noreferrer" class="partner-card" data-subject="quimica">
+                        <img src="dados/molview-logo.png" alt="MolView">
+                    </a>
+
+                    <!-- PhET -->
+                    <a href="https://phet.colorado.edu/pt_BR/" target="_blank" rel="noopener noreferrer" class="partner-card" data-subject="fisica">
+                        <img src="dados/phet-logo.png" alt="PhET Interactive Simulations">
+                    </a>
+
+                    <!-- GeoGebra -->
+                    <a href="https://www.geogebra.org/" target="_blank" rel="noopener noreferrer" class="partner-card" data-subject="matematica">
+                        <img src="dados/geogebra-logo.png" alt="GeoGebra">
+                    </a>
+                </div>
+            </section>
+        </div>
+
+    </div> 
+  </main>
 
 <script src="dados/head.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // 1. Lógica para a Navegação Principal (Troca de Abas)
-            const navButtons = document.querySelectorAll('.nav-button:not(.more-options)');
-            
-            navButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // 1.1. Resetar todos os botões
-                    navButtons.forEach(btn => {
-                        btn.classList.remove('active');
-                        const icon = btn.querySelector('.fas');
-                        if (icon) {
-                            icon.classList.remove('fa-arrow-up');
-                            icon.classList.add('fa-arrow-down');
-                        }
-                    });
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Lógica para o Menu de Matérias (Filtragem de Conteúdo incluindo parceiros)
+        const subjectItems = document.querySelectorAll('.subject-item');
+        const mainCards = document.querySelectorAll('.card-container-wrapper > .card-link');
+        const partnerCards = document.querySelectorAll('.partner-card');
 
-                    // 1.2. Ativar o botão clicado
-                    this.classList.add('active');
-                    const icon = this.querySelector('.fas');
-                    if (icon) {
-                        icon.classList.remove('fa-arrow-down');
-                        icon.classList.add('fa-arrow-up');
-                    }
-                });
+        function filterContent(subject) {
+            // Oculta/Mostra cards principais
+            mainCards.forEach(card => {
+                card.style.display = (subject === 'all' || card.getAttribute('data-subject') === subject) ? 'block' : 'none';
             });
 
-            // 2. Lógica para o Menu de Matérias (Filtragem de Conteúdo)
-            const subjectItems = document.querySelectorAll('.subject-item');
-            const allCards = document.querySelectorAll('.card-container-wrapper > .card-link');
-            const cardWrapper = document.querySelector('.card-container-wrapper');
+            // Oculta/Mostra cards parceiros
+            partnerCards.forEach(card => {
+                card.style.display = (subject === 'all' || card.getAttribute('data-subject') === subject) ? 'flex' : 'none';
+            });
+        }
 
-            function filterContent(subject) {
-                // Oculta todos os cards/links e mantém a matéria selecionada no menu
-                allCards.forEach(card => {
-                    card.style.display = 'none';
+        subjectItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const fullSubjectName = this.textContent.trim().replace(/\s\s+/g, ' ');
+                let filterKey;
+                
+                if (fullSubjectName.startsWith('Matemática Financeira')) {
+                    filterKey = 'matematica financeira';
+                } else if (fullSubjectName.startsWith('Mostrar Todos')) {
+                    filterKey = 'all';
+                } else {
+                    const key = fullSubjectName.split(' ')[0];
+                    if (key === 'Química') filterKey = 'quimica';
+                    else if (key === 'Física') filterKey = 'fisica';
+                    else if (key === 'Matemática') filterKey = 'matematica';
+                }
+
+                const isSelected = this.classList.contains('selected');
+                
+                subjectItems.forEach(i => {
+                    i.classList.remove('selected');
+                    const icon = i.querySelector('.fas');
+                    if (icon) {
+                        icon.classList.remove('fa-arrow-up');
+                        icon.classList.add('fa-arrow-down');
+                    }
                 });
 
-                // Se a matéria for 'all', mostra tudo
-                if (subject === 'all') {
-                    allCards.forEach(card => {
-                        card.style.display = 'block';
-                    });
+                if (isSelected) {
+                    filterContent('all');
                     return;
                 }
 
-                // Mostra apenas os cards com o atributo data-subject correspondente
-                const filteredCards = document.querySelectorAll(`[data-subject="${subject}"]`);
-                
-                filteredCards.forEach(card => {
-                    card.style.display = 'block';
-                });
-            }
+                this.classList.add('selected');
+                const icon = this.querySelector('.fas');
+                if (icon) {
+                    icon.classList.remove('fa-arrow-down');
+                    icon.classList.add('fa-arrow-up');
+                }
 
-            subjectItems.forEach(item => {
-                item.addEventListener('click', function() {
-                
-                    const fullSubjectName = this.textContent.trim().replace(/\s\s+/g, ' ');
-                    let filterKey;
-                    
-                    if (fullSubjectName.startsWith('Matemática Financeira')) {
-                        filterKey = 'matematica financeira';
-                    } else if (fullSubjectName.startsWith('Mostrar Todos')) {
-                        filterKey = 'all';
-                    } else {
-                        // Para as matérias de uma palavra
-                        const key = fullSubjectName.split(' ')[0];
-                        // Mapeamento simples
-                        if (key === 'Química') filterKey = 'quimica';
-                        else if (key === 'Física') filterKey = 'fisica';
-                        else if (key === 'Matemática') filterKey = 'matematica';
-                    }
-
-                    // Verifica se o item clicado já está selecionado para recolher
-                    const isSelected = this.classList.contains('selected');
-                    
-                    // Remove a classe de 'selected' de todos os itens e reseta os ícones
-                    subjectItems.forEach(i => {
-                        i.classList.remove('selected');
-                        const icon = i.querySelector('.fas');
-                        if (icon) {
-                            icon.classList.remove('fa-arrow-up');
-                            icon.classList.add('fa-arrow-down');
-                        }
-                    });
-
-                    if (isSelected) {
-                        // Se já estava selecionado, deseleciona e mostra todos os cards
-                        filterContent('all');
-                        return;
-                    }
-
-                    // Adiciona a classe 'selected' ao item clicado e ajusta o ícone
-                    this.classList.add('selected');
-                    const icon = this.querySelector('.fas');
-                    if (icon) {
-                        icon.classList.remove('fa-arrow-down');
-                        icon.classList.add('fa-arrow-up');
-                    }
-
-                    if (filterKey) {
-                        filterContent(filterKey);
-                    }
-                });
+                if (filterKey) {
+                    filterContent(filterKey);
+                }
             });
-            
-            // Garante que todos os cards apareçam ao carregar
-            filterContent('all');
-            
+        });
         
-
+        filterContent('all');
+    });
 </script>
-        <script>
+
+<script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="e3pwbdB7Yh7c7CqbtkE3u";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
 </body>
 </html>
-

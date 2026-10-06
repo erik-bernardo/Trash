@@ -1,185 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/index.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-    <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/games.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/sobre.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/tabela_periodica.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/recursos.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/index.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/simulacoes.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/geometria_plana.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/tabela_periodica.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/conjuntos_numericos.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/games/admin</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/funcoes.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/games.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/arcos_angulos.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/materias.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/sequencias_numericas.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/stm3.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/porcentagem.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/taxas.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/custo_venda.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/mru.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/energia.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/escalas_termometricas.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/queda_livre.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/ligacoes.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/acidos_bases.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/matriz.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/probabilidade.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/combinatoria.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/nox.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/estequiometria.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/solucoes.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/reacoes.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/cinetica.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/dilatacao_termica.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/calorimetria.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/ondas.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/hidrostatica.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/gravitacao_universal.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/limites.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/sistema-linear.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/eletroquimica.html</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://erik-bernardo.github.io/SimuLab/simulacoes</loc>
-       <lastmod>2026-10-05T03:44:08+00:00</lastmod>
-       <priority>0.5120</priority>
+    <loc>https://erik-bernardo.github.io/SimuLab/simulacoes/geometria_plana.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

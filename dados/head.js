@@ -1,8 +1,8 @@
 const SEARCH_INDEX = [
 
    // ---------- SIMULADORES: MATEMÁTICA ----------
-{ term: "Sim. Cálculo de Matriz", path: "Simulador > Matemática > Simulador", url: "https://erik-bernardo.github.io/SimuLab/simulacoes/matriz.html" },
-{ term: "Sim. Análise de Funções", path: "Simulador > Matemática > Análise", url: "https://erik-bernardo.github.io/SimuLab/simulacoes/funcoes.html" },
+{ term: "Sim. Cálculo de Matriz", path: "Simulador > Matemática > Simulador", url: "https://erik-bernardo.github.io/SimuLabb/simulacoes/matriz.html" },
+{ term: "Sim. Análise de Funções", path: "Simulador > Matemática > Análise", url: "https://erik-bernardo.github.io/SimuLabb/simulacoes/funcoes.html" },
 { term: "Sim. Juros", path: "Simulador > Matemática > Financeira", url: "https://erik-bernardo.github.io/SimuLab/simulacoes/juros.html" },
 { term: "Sim. Custo e Venda", path: "Simulador > Matemática > Financeira", url: "https://erik-bernardo.github.io/SimuLab/simulacoes/custo_venda.html" },
 { term: "Sim. Porcentagem", path: "Simulador > Matemática > Fundamentos", url: "https://erik-bernardo.github.io/SimuLab/simulacoes/porcentagem.html" },
